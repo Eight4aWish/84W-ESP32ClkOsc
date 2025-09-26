@@ -136,7 +136,7 @@ void populateWaveformTable(WaveformType type) {
   }
 }
 
-// ===== Optional ADC helpers (unused but handy) =====
+// ===== Optional ADC helpers (unused but handy) ======
 int getStableAdc(int pin, int samples) {
   long sum = 0;
   for (int i = 0; i < samples; i++) { sum += analogRead(pin); delayMicroseconds(50); }
